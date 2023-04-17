@@ -1,0 +1,161 @@
+body{
+    background-image: url(images/Logo\ Background.png);
+}
+
+.container{
+    min-height: 500px;
+    max-width:1024px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.col {
+    background-color:rgba(11, 248, 129, 0.97);
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.col img{
+    width:100%;
+    height:auto;
+}
+
+.col p{
+    padding: 23px 25px 20px 25px;
+    color: white;
+    line-height: 1.25rem;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.header-container{
+    background-color: rgb(69, 66, 66);
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width:100%;
+}
+
+.header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    border:1px solid;
+    padding: 10px 25px;
+    margin-left: 20px;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+.mobile-wrapper {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .col{
+        width:45%;
+    }
+
+    .hide-desktop-only{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    .mobile-wrapper {
+        display: block;
+    }
+
+    .mobile-nav{
+        display: none;
+        position: absolute;
+    }
+
+    .navbutton{
+        display: block;
+        border: none;
+        background-color: fuchsia;
+        padding: 10px 20px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:400px) {
+    .col{
+        width:100%;
+    }
+
+    .hide-mobile-only{
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    .logo{
+        padding: 40px 0px;
+    }
+
+    .navbutton{
+        margin-left: 0px;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    .container{
+        padding-top: 0px;
+    }
+
+    .mobile-wrapper {
+        display: block;
+    }
+
+    .mobile-nav{
+        display: none;
+        position: absolute;
+    }
+
+    .navbutton{
+        display: block;
+        border: none;
+        background-color: fuchsia;
+        padding: 10px 20px;
+        margin-left: -70px;
+        text-align: center;
+    }
+}

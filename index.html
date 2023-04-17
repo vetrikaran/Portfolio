@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css-reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Responsive Portfolio</title>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <div class="logo">
+                <span class="highlight">KARAN </span>- SOFTWARE ENGINEER
+            </div>
+            <nav>
+                <a href="#" class="navbutton">ABOUT</a>
+                <a href="#" class="navbutton">PRICING</a>
+                <a href="#" class="navbutton">CONTACT</a>
+            </nav>
+
+            <div class="mobile-wrapper">
+                <img src="images/icon-burger-menu.svg" style="width:40px" class="menu">
+
+                <div class="mobile-nav">
+                    <a href="#" class="navbutton">ABOUT</a>
+                    <a href="#" class="navbutton">PRICING</a>
+                    <a href="#" class="navbutton">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- srcset Usage Example (images link diffrent also width is diffrent) -->
+        <!-- <img src="images/pug-charles-unsplash-small.jpg" alt="" srcset="images/pug-charles-unsplash-small.jpg 500w, images/pug-charles-unsplash-medium.jpg 1000w, images/pug-charles-unsplash-big.jpg 1500w"> -->
+
+        <div class="col">
+            <img src="images/image1@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+
+        <div class="col">
+            <img src="images/image2@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+
+        <div class="col">
+            <img src="images/image3@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+
+        <div class="col">
+            <img src="images/image4@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+
+        <div class="col hide-mobile-only">
+            <img src="images/image5@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+        
+        <div class="col hide-mobile-only">
+            <img src="images/image6@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+        
+        <div class="col hide-mobile-only">
+            <img src="images/image7@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+        
+        <div class="col hide-mobile-only">
+            <img src="images/image8@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+        
+        <div class="col hide-mobile-only">
+            <img src="images/image9@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+        
+        <div class="col hide-desktop-only">
+            <img src="images/image10@2x.png">
+            <p>World refers to the totality of entities, to the whole of reality that is.</p>
+        </div>
+    </div>
+
+    <!-- To make the page load faster -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
